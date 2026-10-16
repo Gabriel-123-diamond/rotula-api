@@ -3,3 +3,12 @@ coverage/
 *.lcov
 coverage-final.json
 clover.xml
+
+# Local environment files. .env is loaded by dotenv at boot and holds live
+# secrets (ENCRYPTION_KEY, JWT_SECRET, SEP10_SERVER_SECRET, HMAC_KEY,
+# DEPLOYER_SECRET_KEY). The committed example file is the only environment
+# file that belongs in git.
+.env
+.env.local
+.env.*.local
+!.env.example
